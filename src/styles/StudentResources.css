@@ -1,6 +1,7 @@
 /* StudentResources.css */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 
 .student-resources-container {
   background-color: #FFFFFF;
@@ -45,7 +46,35 @@
 .testimonials p,
 .resources p {
   font-family: 'Lato', sans-serif; /* Apply Lato font */
-  font-weight: 500; /* Slightly bolder font weight */
+  font-weight: 400; /* Normal font weight */
+}
+
+.testimonials h3,
+.resources h3 {
+  font-family: 'Rajdhani', sans-serif; /* Apply Rajdhani font */
+  font-weight: 600; /* Semi-bold font weight */
+}
+
+.text-wide {
+  width: 100%; /* Increase the width for the text */
+  max-width: 600px; /* Add max width to control text spreading */
+}
+
+.custom-button {
+  background-color: #275D38;
+  color: white;
+  font-family: 'Rajdhani', sans-serif; /* Apply Rajdhani font */
+  font-weight: 600; /* Match the font weight with headers */
+  font-size: 1.1rem; /* Increase font size */
+  padding: 0.50rem 2.5rem; /* Adjust padding for height and width */
+  border-radius: 24px; /* Match the border-radius with Figma */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.custom-button:hover {
+  background-color: #1d3e2c;
 }
 
 @media (min-width: 1024px) {
@@ -59,7 +88,7 @@
 .resources-content .resources,
 .resources-content .staff-card {
   width: 100%;
-  max-width: 300px;
+  max-width: 400px; /* Increase max-width for wider text */
 }
 
 .resources-content .lg\:items-start {

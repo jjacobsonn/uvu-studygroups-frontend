@@ -19,18 +19,22 @@ const StudentResources = () => {
 
       <div className="resources-content flex flex-wrap lg:flex-nowrap gap-4 justify-center items-center">
         <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-8">
-          <div className="testimonials w-full max-w-md">
-            <img src={humanitiesIcon} alt="Humanities Icon" className="w-16 mb-4 mx-auto lg:mx-0" />
-            <h3 className="text-xl font-bold text-green-800">TESTIMONIALS</h3>
-            <p className="mb-4">Lorem ipsum dolor sit amet consectetur. Purus eget id pulvinar ultricies.</p>
-            <button className="bg-green-800 hover:bg-green-900 text-white font-bold py-2 px-4 rounded">View More</button>
+          <div className="testimonials w-full max-w-lg flex items-start">
+            <img src={humanitiesIcon} alt="Humanities Icon" className="w-16 mr-4" />
+            <div>
+              <h3 className="text-xl font-semibold text-black">TESTIMONIALS</h3>
+              <p className="mb-4 text-wide">Lorem ipsum dolor sit amet consectetur. Purus eget id pulvinar ultricies.</p>
+              <button className="custom-button">View More</button>
+            </div>
           </div>
 
-          <div className="resources w-full max-w-md">
-            <img src={anthropologyIcon} alt="Anthropology Icon" className="w-16 mb-4 mx-auto lg:mx-0" />
-            <h3 className="text-xl font-bold text-green-800">RESOURCES</h3>
-            <p className="mb-4">Lorem ipsum dolor sit amet consectetur. Purus eget id pulvinar ultricies.</p>
-            <button className="bg-green-800 hover:bg-green-900 text-white font-bold py-2 px-4 rounded">View Resource</button>
+          <div className="resources w-full max-w-lg flex items-start">
+            <img src={anthropologyIcon} alt="Anthropology Icon" className="w-16 mr-4" />
+            <div>
+              <h3 className="text-xl font-semibold text-black">RESOURCES</h3>
+              <p className="mb-4 text-wide">Lorem ipsum dolor sit amet consectetur. Purus eget id pulvinar ultricies.</p>
+              <button className="custom-button">View Resources</button>
+            </div>
           </div>
         </div>
 
