@@ -1,0 +1,108 @@
+.search-section-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 100px; /* Align with the lines from the header */
+  padding-right: 100px; /* Align with the lines from the header */
+}
+
+.search-bar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0; /* No gap between elements */
+}
+
+.search-input {
+  flex-grow: 1;
+  background-color: #275D38;
+  color: #ffffff;
+  border: none;
+  border-radius: 0;
+  font-size: 1.25rem; /* Larger font size */
+  font-weight: bold; /* Bolder font */
+  padding: 10px 20px; /* Added left padding */
+  outline: none;
+  height: 48px; /* Adjusted height */
+}
+
+.search-button,
+.filter-button {
+  background-color: #275D38;
+  color: #ffffff;
+  border: none;
+  border-radius: 0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  height: 48px; /* Ensure the button matches the input height */
+}
+
+.search-button svg,
+.filter-button svg {
+  height: 24px; /* Adjust the size of the icons */
+  width: 24px;
+}
+
+.search-button:hover,
+.filter-button:hover {
+  background-color: #1e4730; /* Darker green on hover */
+}
+
+.styled-header-container {
+  text-align: center;
+  margin-bottom: 20px; /* Space below the header */
+}
+
+.line-with-icon {
+  position: relative;
+  width: 100%; /* Line spans the full container width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  border-top: 1px solid #275D38; /* Thinner line */
+  width: 45%; /* Adjusted line width */
+  margin: 0 50px; /* increase space around the icon */
+}
+
+.icon {
+  height: auto; /* maintain aspect ratio */
+  width: 50px; /* adjust width as necessary */
+  display: block; /* ensures no extra space around the image */
+  margin: 0 auto; /* center the icon horizontally */
+}
+
+.search-input::placeholder {
+  color: #ffffff;
+  opacity: 1;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.search-input:-ms-input-placeholder {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.search-input::-ms-input-placeholder {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.search-input::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.search-input:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.search-input::-ms-input-placeholder {
+  color: #ffffff;
+}

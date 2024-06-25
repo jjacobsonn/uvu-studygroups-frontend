@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/** <--- CSS Font Family ---> **/
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* Default font for website */
+html, body {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 400;
+}
+
+/* Optional utility classes for different font weights */
+.font-light { font-weight: 300; }
+.font-regular { font-weight: 400; }
+.font-medium { font-weight: 500; }
+.font-semibold { font-weight: 600; }
+.font-bold { font-weight: 700; }
+
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  background-color: #FFFFFF;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* src/styles/HomeAbtSection.css */
+.home-abt-image {
+  width: 95%;
+  max-width: 100%; /* Ensures the image does not exceed its container size */
+  padding: 20px;
+  object-fit: contain; /* Keeps the aspect ratio intact while fitting in the designated area */
+  transform: scale(0.8); /* Reduces the image size to 80% of its original */
+  transition: transform 0.3s ease; /* Optional: Smooth transition for the scaling */
+}
+
+/* src/styles/CourseCard.css */
+.course-card-container {
+  height: 300px;
+  color: #ffffff;
+  position: relative;
+  cursor: pointer;
+  background-color: #275D38;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center; /* Aligns children vertically center */
+  justify-content: space-between; /* Separates title and button to each side */
+  padding: 0 20px; /* Adds padding on the left and right */
+}
+
+.course-card-content {
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.course-card-title {
+  background-color: #FFFFFF; /* Ensure the background is white */
+  color: #275D38; /* Text color */
+  padding: 20px; /* Padding around the text */
+  position: absolute; /* Positions the title section absolutely within the card */
+  left: 0; /* Align left edge with the card */
+  right: 0; /* Align right edge with the card */
+  bottom: 0; /* Align to the bottom of the card */
+  margin: 0; /* Remove any default margins that might cause misalignment */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.course-card-container::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 10px;
+  background-color: #275D38; /* Same as the card background */
+  transform: scaleY(0);
+  transition: transform 0.3s;
+  transform-origin: bottom;
+}
+
+.course-card-container:hover::after {
+  transform: scaleY(1);
+}
+
+.outline-button {
+  background-color: transparent;
+  color: #275D38; /* Green text color */
+  border: 2px solid #275D38; /* Green border */
+  text-transform: uppercase; /* All caps */
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+.outline-button:hover {
+  background-color: #275D38; /* Green background on hover */
+  color: #FFFFFF; /* White text on hover */
+  border-color: #275D38;
+}
+
+.rajdhani-bold {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+}
+
+.rajdhani-medium {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 500;
+}
+
+.header-style {
+  font-family: 'Rajdhani', sans-serif; /* Using Rajdhani font family */
+  font-weight: 700; /* Bold text */
+  font-size: 4xl; /* Large text size, adjust as needed */
+  color: #275D38; /* Specific green color */
+  text-align: center; /* Center alignment */
+}
+
+/* src/styles/Courses.css */
+.line-with-icon {
+  margin-bottom: 32px; /* Adjust this value as needed to match the design */
+}
+
+.line {
+  border-top: 1px solid #275D38;
+  width: 40%;
+  margin: 0 100px;
+}
