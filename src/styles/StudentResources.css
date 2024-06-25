@@ -1,0 +1,119 @@
+/* StudentResources.css */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.student-resources-container {
+  background-color: #FFFFFF;
+  padding: 4rem 2rem;
+}
+
+.student-resources-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.student-resources-line-with-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.student-resources-line {
+  height: 1px;
+  background-color: #275D38;
+  width: 36%; /* Adjust the width to match the other headers */
+  margin: 0 3.3rem; /* Adjust the margin to control spacing */
+  flex-grow: 0; /* Ensure it does not grow */
+}
+
+.student-resources-icon {
+  height: auto;
+  width: 32px; /* Adjust the width to match the other icons */
+  padding: 0 0.5rem; /* Add padding to the icon */
+}
+
+.resources-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials p,
+.resources p {
+  font-family: 'Lato', sans-serif; /* Apply Lato font */
+  font-weight: 500; /* Slightly bolder font weight */
+}
+
+@media (min-width: 1024px) {
+  .resources-content {
+    flex-wrap: nowrap;
+    gap: 2rem;
+  }
+}
+
+.resources-content .testimonials,
+.resources-content .resources,
+.resources-content .staff-card {
+  width: 100%;
+  max-width: 300px;
+}
+
+.resources-content .lg\:items-start {
+  align-items: flex-start;
+}
+
+.resources-content .lg\:items-center {
+  align-items: center;
+}
+
+.resources-content .staff-image-container {
+  margin-left: 4rem; /* Add margin to move the staff image to the right */
+}
+
+.resources-content .text-2xl {
+  font-size: 1.6rem;
+}
+
+.resources-content .text-xl {
+  font-size: 1.8rem;
+}
+
+.resources-content img.max-w-lg {
+  max-width: 30rem;
+  height: auto;
+}
+
+.resources-content img.max-w-xl {
+  max-width: 35rem;
+  height: auto;
+}
+
+.resources-content .bg-green-800 {
+  background-color: #275D38;
+}
+
+.resources-content .hover\:bg-green-900:hover {
+  background-color: #1d3e2c;
+}
+
+.resources-content .text-white {
+  color: #FFFFFF;
+}
+
+.resources-content .py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.resources-content .px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.resources-content .rounded {
+  border-radius: 0.25rem;
+}
