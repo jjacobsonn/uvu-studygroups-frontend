@@ -1,31 +1,26 @@
 import React from 'react';
 import { SearchIcon } from '@heroicons/react/outline'; // Ensure you have heroicons installed
+import '../styles/NavigationBar.css';
 
 const NavigationBar = () => {
   return (
     <>
-      <nav className="bg-white p-4 flex justify-between items-center" style={{ backgroundColor: '#FFFFFF' }}>
+      <nav className="bg-white p-4 flex justify-between items-center nav-container">
         <div className="text-2xl font-bold" style={{ color: '#275D38' }}>UVU STUDY GROUPS</div>
-        <div className="flex items-center space-x-4">
-          <button className="bg-green-900 hover:bg-green-800 text-white font-bold py-2 px-4 rounded" style={{ backgroundColor: '#275D38', color: '#FFFFFF' }}>
-            GET STARTED
-          </button>
-          <button className="bg-gray-200 hover:bg-gray-300 text-green-900 font-semibold py-2 px-4 rounded" style={{ backgroundColor: '#DDDDDD', color: '#275D38', borderColor: '#275D38' }}>
-            ACTIVE GROUPS
-          </button>
-          <button className="bg-gray-200 hover:bg-gray-300 text-green-900 font-semibold py-2 px-4 rounded" style={{ backgroundColor: '#DDDDDD', color: '#275D38', borderColor: '#275D38' }}>
-            CREATE GROUP
-          </button>
-          <SearchIcon className="h-6 w-6" style={{ color: '#275D38' }} />
+        <div className="flex items-center space-x-4 nav-buttons">
+          <button className="btn-green">GET STARTED</button>
+          <button className="btn-gray">ACTIVE GROUPS</button>
+          <button className="btn-gray">CREATE GROUP</button>
+          <SearchIcon className="h-6 w-6 search-icon" />
         </div>
       </nav>
-      <nav className="p-2 flex justify-between items-center" style={{ backgroundColor: '#EFEFEF', color: '#1A1A1A' }}>
-        <div className="flex space-x-4 text-sm">
-          <a href="#" className="hover:text-gray-400 font-semibold">HOME</a>
-          <a href="#" className="hover:text-gray-400 font-semibold">JOIN GROUPS</a>
-          <a href="#" className="hover:text-gray-400 font-semibold">CREATE A GROUP</a>
-          <a href="#" className="hover:text-gray-400 font-semibold">LOGIN</a>
-          <a href="#" className="hover:text-gray-400 font-semibold">SIGN UP</a>
+      <nav className="p-2 flex justify-between items-center secondary-nav">
+        <div className="flex space-x-4 text-sm secondary-nav-links">
+          <button className="link-button font-semibold">HOME</button>
+          <button className="link-button font-semibold">JOIN GROUPS</button>
+          <button className="link-button font-semibold">CREATE A GROUP</button>
+          <button className="link-button font-semibold">LOGIN</button>
+          <button className="link-button font-semibold">SIGN UP</button>
         </div>
       </nav>
     </>
