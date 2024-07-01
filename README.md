@@ -1,20 +1,5 @@
 <a name="readme-top"></a>
 
-<!-- PROJECT SHIELDS -->
-<!--
-*** Using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -159,7 +144,7 @@ You need to have Node.js, npm, and TailwindCSS installed.
 - Frontend Roadmap
   - [x] Created Figma Outlining Main Application Pages
   - [x] Created `Home Page` + Components
-  - [ ] Create Main Footer
+  - [x] Create Main Footer
   - [ ] Create and implement `Sign Up` Page
   - [ ] Create and implement `Login` Page
   - [ ] Create and implement `Join Study Group` Page
