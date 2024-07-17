@@ -20,11 +20,11 @@ const Footer = () => {
       </div>
       <div className="footer-contact">
         <span>UVU STUDY GROUPS</span> 
-        <span className="footer-separator">•</span> 
+        <span className="footer-separator"></span> 
         <span className="footer-email">uvu-study@uvu.edu</span> 
-        <span className="footer-separator">•</span> 
+        <span className="footer-separator"></span> 
         <span>(801) 863-8888</span> 
-        <span className="footer-separator">•</span> 
+        <span className="footer-separator"></span> 
         <span>ROOM CS-350</span>
       </div>
       <div className="footer-line"></div>
