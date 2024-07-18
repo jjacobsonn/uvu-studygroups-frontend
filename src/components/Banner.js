@@ -1,4 +1,3 @@
-// src/components/Banner.js
 import React from 'react';
 import backgroundImage from '../images/img-1.jpg';
 
