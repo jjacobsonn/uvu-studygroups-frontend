@@ -1,9 +1,10 @@
+// JoinCourses.js
 import React from 'react';
 import CourseCard from './CourseCard';
 import customIcon from '../icons/dg-textbooks-1.png';
 import '../styles/Pagination.css';
 
-const JoinCourses = () => {
+const JoinCourses = ({ setCurrentPage }) => {
   const courses = [
     { name: "CS3060: Operating Systems Theory" },
     { name: "MATH1050: College Algebra" },
@@ -27,7 +28,7 @@ const JoinCourses = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {courses.map((course, index) => (
-          <CourseCard key={index} course={course} />
+          <CourseCard key={index} course={course} setCurrentPage={setCurrentPage} />
         ))}
       </div>
       <div className="pagination-container flex justify-center mt-8">

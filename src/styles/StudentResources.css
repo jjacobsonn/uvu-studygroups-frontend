@@ -33,7 +33,97 @@
   height: auto;
   width: 32px; /* Adjust the width to match the other icons */
   padding: 0 0.5rem; /* Add padding to the icon */
+}.join-group-header {
+  margin-top: 2rem;
 }
+
+.line-with-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem; /* Match the styling from other sections */
+  margin-bottom: 2rem;
+}
+
+.line {
+  height: 1px;
+  background-color: #275D38;
+  width: 36%; /* Adjust the width to match other headers */
+  margin: 0 3.3rem; /* Adjust the margin to control spacing */
+  flex-grow: 0; /* Ensure it does not grow */
+}
+
+.icon {
+  width: 32px;
+  height: auto; /* Maintain aspect ratio */
+  padding: 0 0.5rem; /* Add padding to the icon */
+}
+
+.join-group-form-container {
+  background-color: #275D38;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.join-group-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 0 2rem; /* Padding to ensure space on sides */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem; /* Add margin to ensure alignment */
+}
+
+.form-group label {
+  font-weight: bold;
+  font-size: 1.25rem; /* Increased font size */
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1rem; /* Increased font size */
+  color: black;
+  background-color: white;
+  width: 100%; /* Full width for alignment */
+}
+
+.btn-green {
+  background-color: #1D3E2C;
+  color: #FFFFFF;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 24px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 0.75rem; 
+  margin-bottom: 0.75rem; 
+}
+
+.btn-green:hover {
+  background-color: #143222;
+}
+
+.line-divider {
+  width: 90%;
+  height: 1px;
+  background-color: #FFFFFF;
+  margin: 1rem auto 2rem auto;
+  margin-top: 2.25rem;
+  margin-bottom: 3.25rem;
+}
+
 
 .resources-content {
   display: flex;

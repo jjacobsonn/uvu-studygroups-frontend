@@ -1,0 +1,136 @@
+.join-group-header {
+  margin-top: 2rem;
+}
+
+.join-group-line-with-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.join-group-line {
+  height: 1px;
+  background-color: #275D38;
+  width: 36%;
+  margin: 0 3.3rem;
+  flex-grow: 0;
+}
+
+.join-group-icon {
+  width: 50px;
+  height: auto;
+  padding: 0 0.5rem;
+}
+
+.join-group-form-container {
+  background-color: #275D38;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.join-group-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 0 2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+}
+
+.form-group label {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: black;
+  background-color: white;
+  width: 100%;
+}
+
+.btn-green {
+  background-color: #1D3E2C;
+  color: #FFFFFF;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 24px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 0.75rem; 
+  margin-bottom: 0.75rem; 
+}
+
+.btn-green:hover {
+  background-color: #143222;
+}
+
+.line-divider {
+  width: 90%;
+  height: 1px;
+  background-color: #FFFFFF;
+  margin: 1rem auto 2rem auto;
+}
+
+/* Media queries for tablets and mobiles */
+@media (max-width: 1024px) {
+  .join-group-form-container {
+    padding: 2rem;
+    max-width: 90%;
+  }
+
+  .join-group-form {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .form-group {
+    margin: 0 0.5rem;
+  }
+
+  .form-control {
+    padding: 0.5rem; /* Adjust padding for smaller screens */
+    font-size: 1rem; /* Adjust font size for better fit */
+  }
+}
+
+@media (max-width: 768px) {
+  .join-group-form-container {
+    padding: 2rem;
+    max-width: 90%;
+    margin: 0 6%;
+  }
+
+  .join-group-form {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .form-group {
+    margin: 0 0.5rem;
+  }
+
+  .form-control {
+    padding: 0.5rem; /* Adjust padding for smaller screens */
+    font-size: 1rem; /* Adjust font size for better fit */
+  }
+}
