@@ -1,17 +1,11 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Banner from './Banner';
 import img3 from '../images/img-3.jpg';
 import SearchForStudyGroups from './SearchForStudyGroups';
-import JoinCourses from './JoinCourses';
+import JoinCourses from './JoinCourses'; // Ensure you are using the correct component name
 import StudentResources from './StudentResources';
 
 const JoinStudyGroup = ({ setCurrentPage }) => {
-  useEffect(() => {
-    setTimeout(() => {
-      window.scrollTo(0, 0);
-    }, 0); // Small timeout to ensure the component has rendered
-  }, []);
-
   return (
     <div>
       <Banner />
@@ -23,7 +17,10 @@ const JoinStudyGroup = ({ setCurrentPage }) => {
           <p className="lato-regular mb-6">
             Lorem ipsum dolor sit amet consectetur. At nascetur commodo et hendrerit massa. Mi interdum massa diam convallis metus nunc elit. Molestie duis ipsum eget turpis. Nisl odio quisque turpis nibh nibh sit. Netus duis aliquam tincidunt egestas dignissim porta aenean vitae facilisi. Euismod imperdiet massa nisl laoreet ut tristique turpis nullam sed. Et consectetur egestas augue nisi nec est metus. Velit nisi proin consequat pellentesque volutpat duis imperdiet semper dictum.
           </p>
-          <button className="outline-button">
+          <button 
+            className="outline-button"
+            onClick={() => setCurrentPage('home')} // Navigate to the homepage
+          >
             Learn More About Us
           </button>
         </div>
@@ -32,7 +29,7 @@ const JoinStudyGroup = ({ setCurrentPage }) => {
         </div>
       </div>
       <SearchForStudyGroups />
-      <JoinCourses setCurrentPage={setCurrentPage} />
+      <JoinCourses setCurrentPage={setCurrentPage} /> {/* Ensure the component name and props are correct */}
       <StudentResources />
     </div>
   );
