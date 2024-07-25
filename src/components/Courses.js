@@ -2,7 +2,7 @@ import React from 'react';
 import CourseCard from './CourseCard';
 import customIcon from '../icons/dg-textbooks-1.png';
 
-const Courses = () => {
+const Courses = ({ setCurrentPage }) => {
   const courses = [
     { name: "CS3060: Operating Systems Theory" },
     { name: "MATH1050: College Algebra" },
@@ -22,11 +22,11 @@ const Courses = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {courses.map((course, index) => (
-          <CourseCard key={index} course={course} />
+          <CourseCard key={index} course={course} setCurrentPage={setCurrentPage} />
         ))}
       </div>
       <div className="text-center mt-8" style={{ marginTop: '4rem' }}>
-        <button className="outline-button">VIEW ALL PROGRAMS & DEGREES</button>
+        <button className="outline-button">VIEW ALL STUDY GROUPS</button>
       </div>
     </div>
   );

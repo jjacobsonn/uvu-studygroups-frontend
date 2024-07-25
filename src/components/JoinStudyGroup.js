@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Banner from './Banner';
-import img3 from '../images/img-3.jpg'; // Ensure this image is available in the images folder
+import img3 from '../images/img-3.jpg';
 import SearchForStudyGroups from './SearchForStudyGroups';
-import JoinCourses from './JoinCourses'; // Import the new component
-import StudentResources from './StudentResources'; // Import the StudentResources component
+import JoinCourses from './JoinCourses';
+import StudentResources from './StudentResources';
 
-const JoinStudyGroup = () => {
+const JoinStudyGroup = ({ setCurrentPage }) => {
+  useEffect(() => {
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 0); // Small timeout to ensure the component has rendered
+  }, []);
+
   return (
     <div>
       <Banner />
@@ -26,8 +32,8 @@ const JoinStudyGroup = () => {
         </div>
       </div>
       <SearchForStudyGroups />
-      <JoinCourses /> {/* Add the JoinCourses component here */}
-      <StudentResources /> {/* Add the StudentResources component here */}
+      <JoinCourses setCurrentPage={setCurrentPage} />
+      <StudentResources />
     </div>
   );
 };

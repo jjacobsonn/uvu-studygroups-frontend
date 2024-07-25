@@ -1,36 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+.button {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  border-radius: 24px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
 
-/* General button styles */
-.btn-green {
+/* Navigation button styles */
+.nav-button {
+  font-weight: 600;
+  border-radius: 24px; /* Ensures the buttons are rounded */
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem; /* Adjust font size if needed */
+}
+
+.nav-button-green {
   background-color: #275D38;
   color: #FFFFFF;
-  font-family: 'Rajdhani', sans-serif;
-  font-weight: 600;
-  padding: 0.75rem 1.5rem;
-  border-radius: 24px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s;
 }
 
-.btn-green:hover {
-  background-color: #1d3e2c;
-}
-
-.btn-gray {
+.nav-button-gray {
   background-color: #DDDDDD; /* Light gray color */
   color: #275D38;
-  font-family: 'Rajdhani', sans-serif;
-  font-weight: 600;
-  padding: 0.75rem 1.5rem;
-  border-radius: 24px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s;
 }
 
-.btn-gray:hover {
+.nav-button-green:hover {
+  background-color: #1d3e2c;
+  color: #FFFFFF;
+}
+
+.nav-button-gray:hover {
   background-color: #CCCCCC; /* Slightly darker gray on hover */
+  color: #275D38; /* Keep the text color consistent */
 }
 
 /* Search icon hover effect */
@@ -60,7 +62,7 @@
 
 /* Additional spacing for secondary nav */
 .secondary-nav {
-  background-color: #EFEFEF; /* Default background color */
+  background-color: #EFEFEF;
   color: #1A1A1A;
 }
 
