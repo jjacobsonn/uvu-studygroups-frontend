@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Courses from './components/Courses';
 import NavigationBar from './components/NavigationBar';
 import Banner from './components/Banner';
@@ -21,6 +21,11 @@ import './styles/JoinGroup.css';
 const App = () => {
   const [currentPage, setCurrentPage] = useState('home');
 
+  useEffect(() => {
+    // Scroll to top whenever the currentPage changes
+    window.scrollTo(0, 0);
+  }, [currentPage]);
+
   const renderPage = () => {
     switch (currentPage) {
       case 'home':
@@ -29,7 +34,7 @@ const App = () => {
             <Banner />
             <HomeAbtSection />
             <SearchForStudyGroups />
-            <Courses />
+            <Courses setCurrentPage={setCurrentPage} />
             <StudentResources />
           </>
         );
@@ -43,7 +48,7 @@ const App = () => {
             <Banner />
             <HomeAbtSection />
             <SearchForStudyGroups />
-            <Courses />
+            <Courses setCurrentPage={setCurrentPage} />
             <StudentResources />
           </>
         );

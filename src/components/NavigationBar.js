@@ -8,8 +8,8 @@ const NavigationBar = ({ setCurrentPage }) => {
       <nav className="bg-white p-4 flex justify-between items-center nav-container">
         <div className="text-2xl font-bold" style={{ color: '#275D38' }}>UVU STUDY GROUPS</div>
         <div className="flex items-center space-x-4 nav-buttons">
-          <button className="nav-button nav-button-green" onClick={() => setCurrentPage('get-started')}>GET STARTED</button>
-          <button className="nav-button nav-button-gray" onClick={() => setCurrentPage('active-groups')}>ACTIVE GROUPS</button>
+          <button className="nav-button nav-button-green" onClick={() => setCurrentPage('home')}>GET STARTED</button>
+          <button className="nav-button nav-button-gray" onClick={() => setCurrentPage('join-study-group')}>ACTIVE GROUPS</button>
           <button className="nav-button nav-button-gray" onClick={() => setCurrentPage('create-group')}>CREATE GROUP</button>
           <SearchIcon className="h-6 w-6 search-icon" />
         </div>

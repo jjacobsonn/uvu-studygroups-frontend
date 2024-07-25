@@ -26,7 +26,12 @@ const Courses = ({ setCurrentPage }) => {
         ))}
       </div>
       <div className="text-center mt-8" style={{ marginTop: '4rem' }}>
-        <button className="outline-button">VIEW ALL STUDY GROUPS</button>
+        <button 
+          className="outline-button"
+          onClick={() => setCurrentPage('join-study-group')}
+        >
+          VIEW ALL STUDY GROUPS
+        </button>
       </div>
     </div>
   );
