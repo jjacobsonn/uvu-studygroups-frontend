@@ -1,4 +1,3 @@
-// JoinCourses.js
 import React from 'react';
 import CourseCard from './CourseCard';
 import customIcon from '../icons/dg-textbooks-1.png';

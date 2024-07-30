@@ -7,9 +7,7 @@ import StudentResources from './StudentResources';
 
 const JoinStudyGroup = ({ setCurrentPage }) => {
   useEffect(() => {
-    setTimeout(() => {
-      window.scrollTo(0, 0);
-    }, 0); // Small timeout to ensure the component has rendered
+    window.scrollTo(0, 0);
   }, []);
 
   return (
@@ -23,7 +21,10 @@ const JoinStudyGroup = ({ setCurrentPage }) => {
           <p className="lato-regular mb-6">
             Lorem ipsum dolor sit amet consectetur. At nascetur commodo et hendrerit massa. Mi interdum massa diam convallis metus nunc elit. Molestie duis ipsum eget turpis. Nisl odio quisque turpis nibh nibh sit. Netus duis aliquam tincidunt egestas dignissim porta aenean vitae facilisi. Euismod imperdiet massa nisl laoreet ut tristique turpis nullam sed. Et consectetur egestas augue nisi nec est metus. Velit nisi proin consequat pellentesque volutpat duis imperdiet semper dictum.
           </p>
-          <button className="outline-button">
+          <button 
+            className="outline-button"
+            onClick={() => setCurrentPage('home')}
+          >
             Learn More About Us
           </button>
         </div>
