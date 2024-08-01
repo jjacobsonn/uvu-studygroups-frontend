@@ -12,7 +12,7 @@
   <p align="center">
     An application to help students at UVU find and create study groups.
     <br />
-    <a href="https://github.com/your_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://www.figma.com/design/ym37iW2znUsgLhKauQ1bqv/UVU-Study-Groups---e2i?m=auto&t=sL9P2sdZFEm4NT1v-6"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/your_username/repo_name">View Demo</a>
