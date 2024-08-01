@@ -4,6 +4,7 @@ import Banner from './components/Banner';
 import HomeAbtSection from './components/HomeAbtSection';
 import SearchForStudyGroups from './components/SearchForStudyGroups';
 import Courses from './components/Courses';
+import Courses from './components/Courses';
 import StudentResources from './components/StudentResources';
 import Footer from './components/Footer';
 import JoinStudyGroup from './components/JoinStudyGroup';

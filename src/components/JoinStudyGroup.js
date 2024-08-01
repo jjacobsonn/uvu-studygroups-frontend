@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Banner from './Banner';
 import img3 from '../images/img-3.jpg';
 import SearchForStudyGroups from './SearchForStudyGroups';
-import JoinCourses from './JoinCourses';
+import JoinCourses from './JoinCourses'; // Ensure you are using the correct component name
 import StudentResources from './StudentResources';
 
 const JoinStudyGroup = ({ setCurrentPage }) => {
@@ -33,7 +33,7 @@ const JoinStudyGroup = ({ setCurrentPage }) => {
         </div>
       </div>
       <SearchForStudyGroups />
-      <JoinCourses setCurrentPage={setCurrentPage} />
+      <JoinCourses setCurrentPage={setCurrentPage} /> {/* Ensure the component name and props are correct */}
       <StudentResources />
     </div>
   );
