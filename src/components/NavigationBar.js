@@ -20,7 +20,7 @@ const NavigationBar = ({ setCurrentPage }) => {
           <button className="link-button font-semibold" onClick={() => setCurrentPage('join-study-group')}>JOIN GROUPS</button>
           <button className="link-button font-semibold" onClick={() => setCurrentPage('create-study-group')}>CREATE A GROUP</button>
           <button className="link-button font-semibold" onClick={() => setCurrentPage('login')}>LOGIN</button>
-          <button className="link-button font-semibold" onClick={() => setCurrentPage('sign-up')}>SIGN UP</button>
+          <button className="link-button font-semibold" onClick={() => setCurrentPage('sign-up')}>SIGN UP</button> {/* Added Sign Up button */}
         </div>
       </nav>
     </>
