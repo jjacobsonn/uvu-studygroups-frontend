@@ -1,0 +1,185 @@
+.sign-up-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 60px; /* Adjust based on navigation bar height */
+}
+
+.page-header {
+  color: #275D38; /* Same green color as the form */
+  font-size: 2.5rem; /* Page title font size */
+  font-weight: bold;
+  margin-bottom: 2rem; /* Space below the page header */
+  padding: 1rem; /* Padding for the header */
+}
+
+.sign-up-form-container {
+  background-color: #275D38;
+  padding: 2rem; /* Adjusted padding */
+  border-radius: 10px;
+  margin-top: 2rem;
+  max-width: 800px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.discord-button img {
+  vertical-align: middle;
+}
+
+.discord-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem; /* Increased padding for larger size */
+  font-size: 1.75rem; /* Increased font size for the text */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.discord-icon {
+  width: 60px; /* Adjusted size for a larger icon */
+  height: auto;
+}
+
+.discord-button:hover {
+  background-color: #e2e2e2; /* Optional: Add a hover effect for better UX */
+}
+
+.form-group {
+  margin-bottom: 1.5rem; /* Spacing between form groups */
+}
+
+.form-group label {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: black;
+  background-color: white;
+  width: 100%;
+  margin-bottom: 1.5rem; /* Spacing between form controls */
+}
+
+.btn-green {
+  background-color: #1D3E2C;
+  color: #FFFFFF;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 24px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+  max-width: 250px; /* Centering button */
+  display: block;
+  margin: 0 auto;
+}
+
+.btn-green:hover {
+  background-color: #143222;
+}
+
+.line-divider {
+  width: 90%;
+  height: 1px;
+  background-color: #FFFFFF;
+  margin: 1rem auto 2rem auto;
+}
+
+/* Increased font size and spacing for subheading and labels */
+.sign-up-form-container p {
+  font-size: 1.125rem; /* Increased font size for subheading */
+  margin-bottom: 1.5rem; /* Additional spacing below */
+}
+
+.or-sign-in-text {
+  margin-top: 2rem; /* Added top margin for spacing */
+}
+
+.or-sign-in-text span {
+  font-size: 1.25rem; /* Increased font size */
+}
+
+@media (max-width: 1024px) {
+  .sign-up-form-container {
+    padding: 2rem;
+    max-width: 90%;
+  }
+
+  .form-control {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .btn-green {
+    padding: 0.5rem 1rem;
+  }
+
+  .custom-checkbox {
+    width: 18px; /* Adjusted size for smaller screens */
+    height: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sign-up-form-container {
+    padding: 2rem;
+    max-width: 90%;
+    margin: 0 6%;
+  }
+
+  .form-control {
+    padding: 0.5rem;
+    font-size: 0.875rem;
+  }
+
+  .btn-green {
+    padding: 0.5rem 1rem;
+  }
+
+  .custom-checkbox {
+    width: 16px; /* Adjusted size for even smaller screens */
+    height: 16px;
+  }
+
+  .discord-button {
+    font-size: 1.25rem; /* Reduced font size */
+    padding: 1rem; /* Reduced padding */
+  }
+
+  .flex.items-center.justify-between.mb-6 {
+    display: flex;
+    flex-direction: column; /* Stack the elements vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center;
+  }
+
+  .remember-me-label,
+  .forgot-password-link {
+    width: 100%;
+    margin: 0; /* Reset margins */
+  }
+
+  .forgot-password-link {
+    margin-top: 1rem; /* Add margin to the top for separation */
+  }
+
+  .remember-me-label {
+    margin-bottom: 1rem; /* Add margin to the bottom for separation */
+  }
+}
