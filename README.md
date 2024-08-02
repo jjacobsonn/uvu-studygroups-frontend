@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/jjacobsonn/uvu-studygroups-frontend">
+  <a href="https://jjacobsonn.github.io/uvu-studygroups/">
     <img src="./public/images/UVUComboOverWolverinesWhite-0040.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -15,11 +15,11 @@
     <a href="https://www.figma.com/design/ym37iW2znUsgLhKauQ1bqv/UVU-Study-Groups---e2i?m=auto&t=sL9P2sdZFEm4NT1v-6"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/your_username/repo_name">View Demo</a>
+    <a href="https://jjacobsonn.github.io/uvu-studygroups/">View Demo</a>
     ·
-    <a href="https://github.com/your_username/repo_name/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    <a href="https://github.com/jjacobsonn/uvu-studygroups">Report Bug</a>
     ·
-    <a href="https://github.com/your_username/repo_name/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+    <a href="https://github.com/jjacobsonn/uvu-studygroups">Request Feature</a>
   </p>
 </div>
 
