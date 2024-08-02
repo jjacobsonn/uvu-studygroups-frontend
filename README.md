@@ -145,16 +145,16 @@ You need to have Node.js, npm, and TailwindCSS installed.
   - [x] Created Figma Outlining Main Application Pages
   - [x] Created `Home Page` + Components
   - [x] Create Main Footer
-  - [ ] Create and implement `Sign Up` Page
-  - [ ] Create and implement `Login` Page
-  - [ ] Create and implement `Join Study Group` Page
-  - [ ] Create and implement `Create Study Group` Page 
-  - [ ] Implement Mobile App Version
+  - [ ] `In-Progress...` Create and implement `Sign Up` Page
+  - [x] Create and implement `Login` Page
+  - [x] Create and implement `Join Study Group` Page
+  - [x] Create and implement `Create Study Group` Page 
+  - [x] Implement Mobile App Version
 -   Backend Roadmap
-  - [ ] Add User Authentication
+  - [ ] `In-Progress...` Add User Authentication
   - [ ] Integrate Discord OAuth2
   - [ ] Add Notification System
-  - [ ] Implement Backend DB for Study Groups  
+  - [ ] `In-Progress...` Implement Backend DB for Study Groups  
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
