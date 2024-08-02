@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/uvu-studygroups/static/css/main.b6cafab7.css",
+    "main.js": "/uvu-studygroups/static/js/main.741999c4.js",
+    "static/js/453.a9801873.chunk.js": "/uvu-studygroups/static/js/453.a9801873.chunk.js",
+    "static/media/img-2.jpg": "/uvu-studygroups/static/media/img-2.03a50923b86b1f7fb99a.jpg",
+    "static/media/img-3.jpg": "/uvu-studygroups/static/media/img-3.5108fb2f60555765441a.jpg",
+    "static/media/img-4.jpg": "/uvu-studygroups/static/media/img-4.9d20fb78127b725b0f21.jpg",
+    "static/media/img-1.jpg": "/uvu-studygroups/static/media/img-1.d62b8fe517fddc75d9ba.jpg",
+    "static/media/Card_Staff.png": "/uvu-studygroups/static/media/Card_Staff.036f43ccb9811efbf210.png",
+    "index.html": "/uvu-studygroups/index.html",
+    "main.b6cafab7.css.map": "/uvu-studygroups/static/css/main.b6cafab7.css.map",
+    "main.741999c4.js.map": "/uvu-studygroups/static/js/main.741999c4.js.map",
+    "453.a9801873.chunk.js.map": "/uvu-studygroups/static/js/453.a9801873.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b6cafab7.css",
+    "static/js/main.741999c4.js"
+  ]
+}
