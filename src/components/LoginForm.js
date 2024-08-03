@@ -1,11 +1,32 @@
-import React from 'react';
-import NavigationBar from './NavigationBar';
+// src/components/LoginForm.js
+import React, { useState } from 'react';
+import axios from '../axiosInstance';
 import Banner from './Banner';
 import StudentResources from './StudentResources';
-import Footer from './Footer';
 import discordIcon from '../icons/discord.png';
 
 const LoginForm = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [successMessage, setSuccessMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post('/auth/login', { email, password });
+      const { token } = response.data;
+      localStorage.setItem('token', token); // Store the token in local storage
+      console.log('Logged in successfully:', token);
+      setSuccessMessage('Logged in successfully!');
+      setErrorMessage(''); // Clear any previous error messages
+    } catch (error) {
+      console.error('Login failed:', error.response.data);
+      setErrorMessage('Invalid email or password. Please try again.');
+      setSuccessMessage(''); // Clear any previous success messages
+    }
+  };
+
   return (
     <div className="App app-container">
       <Banner />
@@ -26,23 +47,38 @@ const LoginForm = () => {
             <hr className="flex-grow border-gray-300" />
           </div>
           
-          <form>
+          {successMessage && <p className="text-center text-green-500 mb-4">{successMessage}</p>}
+          {errorMessage && <p className="text-center text-red-500 mb-4">{errorMessage}</p>}
+          
+          <form onSubmit={handleLogin}>
             <div className="form-group mb-4">
               <label className="text-white block mb-2">Email Address</label>
-              <input type="email" placeholder="Enter Your Email" className="form-control bg-white text-green-800 p-2 rounded w-full" />
+              <input
+                type="email"
+                placeholder="Enter Your Email"
+                className="form-control bg-white text-green-800 p-2 rounded w-full"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
             </div>
             <div className="form-group form-group-password mb-4">
-              <label className="text-white block mb-2 mt-4">Password</label> {/* Added top margin */}
-              <input type="password" placeholder="Enter Your Password" className="form-control bg-white text-green-800 p-2 rounded w-full" />
+              <label className="text-white block mb-2 mt-4">Password</label>
+              <input
+                type="password"
+                placeholder="Enter Your Password"
+                className="form-control bg-white text-green-800 p-2 rounded w-full"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
             </div>
             <div className="flex items-center justify-between mb-6">
-              <label className="text-white flex items-center remember-me-label pl-2"> {/* Added left padding */}
+              <label className="text-white flex items-center remember-me-label pl-2">
                 <input type="checkbox" className="mr-2 custom-checkbox" />
                 Remember me
               </label>
-              <a href="#" className="text-white forgot-password-link pr-2">Forgot password?</a> {/* Added right padding */}
+              <a href="#" className="text-white forgot-password-link pr-2">Forgot password?</a>
             </div>
-            <button type="submit" className="btn-green w-full mx-auto">LOGIN</button> {/* Centered button */}
+            <button type="submit" className="btn-green w-full mx-auto">LOGIN</button>
           </form>
         </div>
       </div>
